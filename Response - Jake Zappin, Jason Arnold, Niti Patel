@@ -1,0 +1,19 @@
+1. How did domain models differ?
+
+  We all used Course as the point of truth. Everything connected to course directly, in has many object through relationships, except for groups, where we had to go through something else.
+
+2. How did your partner handle the logic of dividing teams?
+  Shuffle and each_slice,
+
+
+3. Remainders!
+  If the group was less than the length provided, we popped off the last name and added it to an existing group to deal with remainders
+
+4. The single source of truth was all in course. Everything was connected to      everything else through course. Except for Niti's group, which had a bug when going from teacher to group. :(
+
+5. How would refactor your partner's code?
+  Write smaller methods. We all had giant methods. We also had weird method and variable names, that we could shorten.
+
+6. What did you struggle with?
+    Remainders and repeats, as well as how to persist the data.
+    We had bugs where we fixed one problem and caused another. It was hard to get the CLI to work properly as well, seeds were tricky to deal with.
