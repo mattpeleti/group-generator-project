@@ -8,6 +8,8 @@ class Group
     @groups = []
   end
 
-
+  # def list_students
+  # 	self.students
+  # end
 
 end

@@ -6,6 +6,7 @@ class Teacher
   def initialize(name)
     @name = name
     @courses = []
+    @groups = []
     @@all << self
   end
 
@@ -21,5 +22,20 @@ class Teacher
     @courses << course
     course.teachers << self
   end
+
+  # def add_group(group)
+  #   @groups << group
+  #   group.teachers << self
+  # end
+
+
+  # def see_groups
+  #   @array = []
+  #   if @name == groups.each {|group| group.name.split(" ").last}
+  #     @array << groups.each {|group| group.name.split(" ")[1]}
+  #   end
+
+  #   @array
+  # end
 
 end

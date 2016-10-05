@@ -4,6 +4,7 @@ class CLI
 
 
 	def run
+		system 'clear'
 		puts "Hello instructor! Please enter your name: "
 		@current_user = login
 		help_menu
@@ -51,15 +52,31 @@ class CLI
 	end
 
 	def list_groups
+		# @anotherarray = []
 		@instructor_course.groups.each_with_index do |group, index|
+			# binding.pry
 			puts "\t#{index + 1}. #{group.name}"
+			# @anotherarray << "\t#{index + 1}. #{group.name}"
 		end
+
+		# @annotherarray
+		# # @instructor_course.groups.select {|instructor| instructor.split(" ").last}
 	end
 
 	def list_teachers
 		@instructor_course.teachers.each_with_index do |teacher, index|
 			puts "\t#{index + 1}. #{teacher.name}"
 		end
+
+		# @array = []
+		# @instructor_course.teachers.each do |teacher|
+		# 	@annotherarray.each do |indv_group|
+		# 		if teacher.name == indv_group.split(" ").last
+		# 			@array << indv_group.split(" ")[1]
+		# 		end
+		# 	end
+		# end
+		# @array
 	end
 
 	def sort_class
